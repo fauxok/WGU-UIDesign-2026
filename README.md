@@ -1,2 +1,2 @@
-This repository contains the completed final project for the D279 User Interface Design course. 
-Included are the project analysis document (PDF), featuring the sitemap and mid-fidelity wireframes, as well as the HTML files that comprise the coded prototype developed for this course.
+This repository contains the completed final project for the User Interface Design course. 
+It includes the project analysis (PDF) featuring the sitemap and mid-fidelity wireframes, along with the HTML and CSS files that comprise the fully styled coded prototype.
