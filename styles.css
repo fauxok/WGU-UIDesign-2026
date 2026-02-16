@@ -1,0 +1,383 @@
+/*
+   WGU D279 UI Design – Styles
+   Color Palette
+ */
+
+/* Primary Colors */
+:root {
+  --midnight-blue: #003B6D;
+  --blue-sky: #6699CC;
+
+  /* Secondary Colors */
+  --dim-gray: #676767;
+  --silver: #BDBDBD;
+}
+
+/*
+   Global Styles
+ */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  background-color: #ffffff;
+  color: var(--dim-gray);
+  display: flex;
+  flex-direction: column;
+}
+
+html, body {
+height: 100%;
+margin: 0;
+}
+
+/*
+   Header & Navigation
+  */
+
+header {
+  background-color: var(--midnight-blue);
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  color: #ffffff;
+  margin: 0;
+}
+
+nav {
+  background-color: var(--blue-sky);
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: var(--midnight-blue);
+}
+
+/* Logo styling */
+
+.logo {
+width: 40px;
+height: auto;
+}
+
+h1, h2 {
+  color: var(--midnight-blue);
+}
+
+/* 
+   Content
+ */
+
+main {
+  padding: 20px;
+  flex: 1;
+}
+
+hr {
+  border: 1px solid var(--silver);
+}
+
+/* 
+   Links
+  */
+
+a {
+  color: var(--midnight-blue);
+}
+
+a:hover {
+  color: var(--blue-sky);
+}
+
+/* 
+   Footer
+ */
+
+footer {
+  background-color: var(--silver);
+  color: var(--dim-gray);
+  text-align: center;
+  padding: 10px;
+}
+
+.back-home {
+position: fixed;
+bottom: 20px;
+right: 20px;
+
+background-color: var(--midnight-blue);
+color: #ffffff;
+padding: 10px 14px;
+text-decoration: none;
+border-radius: 6px;
+font-weight: bold;
+font-size: 14px;
+
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.back-home:hover {
+background-color: var(--blue);
+}
+
+/* Header with inline logo and title */
+
+.site-header {
+display: flex;
+align-items: center; 
+justify-content: center;
+gap: 14px; 
+background-color: var(--midnight-blue);
+padding: 20px;
+}
+
+.site-header h1 {
+color: #ffffff;
+margin: 0;
+font-size: 28px;
+}
+/* Contact form – */
+
+.subtitle {
+  color: #676767;
+  margin-bottom: 20px;
+}
+
+/* Form container */
+
+.contact-form {
+  max-width: 700px;           
+  padding: 30px;              
+  border: 1px solid #BDBDBD;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+/* Labels */
+
+.contact-form label {
+  display: block;
+  margin-top: 20px;
+  color: #003B6D;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Inputs, select, textarea */
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;              
+  margin-top: 8px;
+  border: 1px solid #BDBDBD;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* Make message box bigger */
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Focus states */
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  outline: none;
+  border-color: #6699CC;
+}
+
+/* Button */
+
+.contact-form button {
+  margin-top: 25px;
+  background-color: #003B6D;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #6699CC;
+}
+
+/* Navigation bar below header */
+
+.main-nav {
+  background-color: var(--blue-sky);
+  padding: 12px 0;          
+  text-align: center;
+  margin-top: 0;            
+}
+
+.main-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 8px;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+  color: var(--midnight-blue);
+}
+
+.main-nav span {
+  color: #ffffff;
+  margin: 0 4px;
+}
+
+/* Right column (text) */
+.home-text {
+  max-width: 600px;
+}
+
+.home-layout {
+display: flex;
+align-items: center;
+gap: 4rem;
+
+width: 100%;
+max-width: 1400px; 
+margin: 60px auto;
+padding: 0 60px; 
+box-sizing: border-box;
+}
+.home-images,
+.home-text {
+flex: 1;
+}
+.home-images {
+display: flex;
+flex-direction: column;
+gap: 1.5rem;
+}
+
+.home-image {
+width: 100%;
+max-width: none;
+height: auto;
+border-radius: 14px;
+object-fit: cover;
+}
+
+@media (max-width: 900px) {
+.home-layout {
+flex-direction: column;
+padding: 0 24px;
+}
+
+.home-text {
+max-width: 600px;
+}
+}
+.logo {
+max-width: 250px;
+}
+
+@media (max-width: 900px) {
+.home-layout {
+flex-direction: column;
+text-align: center;
+}
+
+.home-images {
+align-items: center;
+}
+}
+.about-content {
+max-width: 1100px;
+margin: 40px auto;
+padding: 0 24px;
+}
+.about-gallery {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 24px;
+
+width: 100%;
+max-width: 1400px;
+margin: 0 auto;
+padding: 40px 60px;
+background-color: #f4f4f4;
+box-sizing: border-box;
+}
+
+.about-gallery img {
+width: 100%;
+min-height: 320px;
+object-fit: cover;
+border-radius: 12px;
+}
+/* Tablet */
+@media (max-width: 900px) {
+.about-gallery {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media (max-width: 900px) {
+.about-gallery {
+grid-template-columns: repeat(2, 1fr);
+}
+}
+@media (max-width: 500px) {
+.about-gallery {
+grid-template-columns: 1fr;
+}
+}
+.primary-button {
+display: inline-block;
+margin-top: 30px;
+padding: 14px 28px;
+
+background-color: var(--midnight-blue);
+color: #ffffff;
+text-decoration: none;
+font-weight: bold;
+font-size: 16px;
+
+border-radius: 8px;
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.primary-button:hover {
+background-color: var(--blue-sky);
+color: var(--midnight-blue);
+}
+.home-hero {
+background-color: #f0f0f0; 
+padding: 40px 20px;
+text-align: center;
+}
+
+/* Tagline */
+.hero-tagline {
+font-size: 13px;
+font-style: italic;
+color: #ffffff;
+margin: 4px;
+}
+.home-hero {
+width: 100%;
+}
